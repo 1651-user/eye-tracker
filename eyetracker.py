@@ -19,14 +19,14 @@ def draw_eye(eye_x, eye_y):
     pupil_x = eye_x + (math.cos(angle) * distance)
     pupil_y = eye_y + (math.sin(angle) * distance)
 
-    pygame.draw.circle(screen, (255, 255, 255), (eye_x, eye_y), 50)
-    pygame.draw.circle(screen, (0, 0, 100), (pupil_x, pupil_y), 15)
+    pygame.draw.circle(screen, (255, 255, 255), (eye_x, eye_y), 50)  
+    pygame.draw.circle(screen, (255, 105, 180), (pupil_x, pupil_y), 15)
 
 def update():
     pass
 
 def draw():
-    screen.fill((0, 0, 0))
+    screen.fill((255, 182, 193)) 
     draw_eye(200, 200)
     draw_eye(330, 200)
     pygame.display.flip()
